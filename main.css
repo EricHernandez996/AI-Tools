@@ -114,3 +114,55 @@ footer {
   width: auto;    
   display: block;    
 }
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #111;
+  background-color: #f7f7f7a6;
+}
+
+.tutorials {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f7f7f7; 
+  border-top: 1px solid #ddd;
+}
+
+.tutorials h2 {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  font-weight: normal;
+  color: #111;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.tutorials h2::before,
+.tutorials h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 120px;
+  height: 1px;
+  background: #888;
+}
+
+.tutorials h2::before {
+  right: 100%;
+  margin-right: 20px;
+}
+
+.tutorials h2::after {
+  left: 100%;
+  margin-left: 20px;
+}
+
+.tutorials p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
